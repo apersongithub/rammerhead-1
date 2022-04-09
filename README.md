@@ -5,7 +5,7 @@
 
 ## Thanks to OlyB for the name idea.
 
-> proxy based on testcafe-hammerhead (default password is `sharkie4life`, if you deployed from this repo you can ignore the password field)
+> proxy based on testcafe-hammerhead (default password is `sharkie4life`, if you deployed from this repo you can ignore this)
 
 Demo link: https://demo-opensource.rammerhead.org
 
