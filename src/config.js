@@ -22,7 +22,7 @@ module.exports = {
         return { hostname: new URL('http://' + req.headers.host).hostname, port: 443, crossDomainPort: 443, protocol: 'https:'}
     },
 
-    // enforce a password for creating new sessions. set to null to disable
+    // enforce a password for creating new sessions. set to undefined to disable
     password: undefined,
 
     // disable or enable localStorage sync (turn off if clients send over huge localStorage data, resulting in huge memory usages)
