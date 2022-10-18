@@ -45,14 +45,43 @@ gr-main-header {
 embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }</style>
 
     <title>Rammerhead Proxy</title>
-<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><style class="darkreader darkreader--sync" media="screen"></style><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><style class="darkreader darkreader--sync" media="screen"></style><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
 
-<body>
+<body style="
+    background-color: transparent;
+">
+<div class="input-group mb-2" style="position: fixed;">
+            
+            <input type="text" placeholder="GIRLS WANT GIRLS WHERE IM FROM" id="session-url" style="
+    padding: 17px;
+    padding-left: 55px;
+    width: 320px;
+    border: 1px solid #939393;
+    font-size: 13px;
+    color: #ffffff;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzVGNjM2OCI+PHBhdGggZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0E2LjQ3MSA2LjQ3MSAwIDAgMCAxNiA5LjUgNi41IDYuNSAwIDEgMCA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: 0;
+    background-position-x: 20px;
+    margin-top: 5px;
+    border-radius: 50px;
+    height: 48px;
+    /* background: none; */
+    position: fixed;
+    margin-left: 40%;
+">
+            <div class="input-group-append" style="
+    opacity: 0;
+">
+                <button class="btn btn-success" id="session-go">Go!</button>
+            </div>
+        </div>
     <header style="
     filter: opacity(0);
 ">
-        <img src="logo.png">
-        <h1>Rammerhead Proxy</h1>
+        
+        
     </header>
     <div class="container mb-5">
         <p class="mt-3 mb-3 font-weight" style="
@@ -74,31 +103,7 @@ embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast
             </div>
             <input type="password" class="form-control" id="session-password" placeholder="Password is given by host of this site.">
         </div>
-        <div class="input-group mb-2">
-            
-            <input type="text" placeholder="GIRLS WANT GIRLS WHERE IM FROM" id="session-url" style="
-    padding: 17px;
-    padding-left: 55px;
-    width: 320px;
-    border: 1px solid #939393;
-    font-size: 13px;
-    color: #ffffff;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iIzVGNjM2OCI+PHBhdGggZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0E2LjQ3MSA2LjQ3MSAwIDAgMCAxNiA5LjUgNi41IDYuNSAwIDEgMCA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg==');
-    background-repeat: no-repeat;
-    background-position: left center;
-    outline: 0;
-    background-position-x: 20px;
-    margin-top: 5px;
-    border-radius: 50px;
-    height: 48px;
-    /* background: none; */
-">
-            <div class="input-group-append" style="
-    opacity: 0;
-">
-                <button class="btn btn-success" id="session-go">Go!</button>
-            </div>
-        </div>
+        
         <div class="input-group mb-4" style="
     opacity: 0;
 ">
@@ -136,9 +141,10 @@ embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast
                     <th>Created on</th>
                 </tr>
             </thead>
-            <tbody><tr><td>c2e713f01d74461ba3f1d7177925173f</td><td>10/18/2022, 7:09:54 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>21e00ee3251940b5bbb7901dd5ca6031</td><td>10/18/2022, 6:18:17 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>8e0c97e679644941a4775997348ac6b8</td><td>10/18/2022, 6:18:05 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>7e1fcc2b58d246cd9bc8aaa2bd1dfc4d</td><td>10/18/2022, 6:17:59 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>a66fa2c4f3d54b5abe1321b69e05e04e</td><td>10/18/2022, 6:16:30 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr></tbody>
+            <tbody><tr><td>0b6518fc8397472780239afe41a25118</td><td>10/18/2022, 7:36:10 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>5db21350b1644dcaadf7347ebd21f6c8</td><td>10/18/2022, 7:35:00 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>5b94800c410c4e28b6caafb197dc2eb1</td><td>10/18/2022, 7:34:55 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>c2e713f01d74461ba3f1d7177925173f</td><td>10/18/2022, 7:09:54 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>21e00ee3251940b5bbb7901dd5ca6031</td><td>10/18/2022, 6:18:17 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>8e0c97e679644941a4775997348ac6b8</td><td>10/18/2022, 6:18:05 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>7e1fcc2b58d246cd9bc8aaa2bd1dfc4d</td><td>10/18/2022, 6:17:59 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr><tr><td>a66fa2c4f3d54b5abe1321b69e05e04e</td><td>10/18/2022, 6:16:30 PM</td><td><button class="btn btn-outline-primary">Fill in existing session ID</button></td><td><button class="btn btn-outline-danger">Delete</button></td></tr></tbody>
         </table>
     </div>
+
 
 
 
